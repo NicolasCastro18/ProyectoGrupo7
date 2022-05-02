@@ -52,6 +52,18 @@
     <Compile Include="Clases\Localidad.cs" />
     <Compile Include="Clases\Provincia.cs" />
     <Compile Include="Clases\Usuario.cs" />
+    <Compile Include="Formularios De Negocios\Articulo\frmAltaArticulos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios De Negocios\Articulo\frmAltaArticulos.Designer.cs">
+      <DependentUpon>frmAltaArticulos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios De Negocios\Articulo\frmBYCArticulos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios De Negocios\Articulo\frmBYCArticulos.Designer.cs">
+      <DependentUpon>frmBYCArticulos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios De Negocios\Colores\frmAltasColores.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +108,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formularios De Negocios\Articulo\frmBYCArticulos.resx">
+      <DependentUpon>frmBYCArticulos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios De Negocios\Colores\frmAltasColores.resx">
       <DependentUpon>frmAltasColores.cs</DependentUpon>
     </EmbeddedResource>

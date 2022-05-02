@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ProyectoTeorico_TiendaSingapur.Formularios_De_Negocios.Articulos
+namespace ProyectoTeorico_TiendaSingapur.Formularios_De_Negocios.Articulo
 {
-    public partial class frmCyBArticulos : Form
+    public partial class frmBYCArticulos : Form
     {
-        public frmCyBArticulos()
+        public frmBYCArticulos()
         {
             InitializeComponent();
         }

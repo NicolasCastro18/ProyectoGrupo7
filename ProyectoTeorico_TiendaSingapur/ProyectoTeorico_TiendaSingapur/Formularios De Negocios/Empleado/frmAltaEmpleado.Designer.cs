@@ -232,21 +232,21 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(302, 451);
+            this.button1.Image = global::ProyectoTeorico_TiendaSingapur.Properties.Resources.AgregarIcon;
+            this.button1.Location = new System.Drawing.Point(302, 434);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(63, 40);
             this.button1.TabIndex = 1;
-            this.button1.Text = "Agregar";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(207, 451);
+            this.btnCancelar.Image = global::ProyectoTeorico_TiendaSingapur.Properties.Resources.CancelarIcon;
+            this.btnCancelar.Location = new System.Drawing.Point(207, 434);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(75, 23);
+            this.btnCancelar.Size = new System.Drawing.Size(89, 40);
             this.btnCancelar.TabIndex = 2;
-            this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
