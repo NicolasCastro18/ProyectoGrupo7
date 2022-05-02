@@ -1,4 +1,5 @@
 ﻿using ProyectoTeorico_TiendaSingapur.Formularios_De_Negocios;
+using ProyectoTeorico_TiendaSingapur.Formularios_De_Negocios.Articulo;
 using ProyectoTeorico_TiendaSingapur.Formularios_De_Negocios.Colores;
 using System;
 using System.Collections.Generic;
@@ -58,6 +59,13 @@ namespace ProyectoTeorico_TiendaSingapur
         private void datosColoresToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmConsultaColores ventana = new frmConsultaColores();
+            ventana.ShowDialog();
+            ventana.Dispose();
+        }
+
+        private void altaArticuloToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAltaArticulos ventana = new frmAltaArticulos();
             ventana.ShowDialog();
             ventana.Dispose();
         }

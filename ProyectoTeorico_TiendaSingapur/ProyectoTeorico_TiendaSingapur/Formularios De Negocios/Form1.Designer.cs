@@ -46,12 +46,12 @@
             this.datosEmpleadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.datosProveedoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.datosTipoArticuloToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.datosColoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.datosMarcaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.facturarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nuevaFacturaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eliminarFacturaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.datosColoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.datosMarcaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -124,6 +124,7 @@
             this.altaArticuloToolStripMenuItem.Name = "altaArticuloToolStripMenuItem";
             this.altaArticuloToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.altaArticuloToolStripMenuItem.Text = "Alta Articulo";
+            this.altaArticuloToolStripMenuItem.Click += new System.EventHandler(this.altaArticuloToolStripMenuItem_Click);
             // 
             // altaBarrioToolStripMenuItem
             // 
@@ -165,27 +166,40 @@
             // datosClienteToolStripMenuItem
             // 
             this.datosClienteToolStripMenuItem.Name = "datosClienteToolStripMenuItem";
-            this.datosClienteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.datosClienteToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.datosClienteToolStripMenuItem.Text = "Datos Cliente";
             // 
             // datosEmpleadosToolStripMenuItem
             // 
             this.datosEmpleadosToolStripMenuItem.Name = "datosEmpleadosToolStripMenuItem";
-            this.datosEmpleadosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.datosEmpleadosToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.datosEmpleadosToolStripMenuItem.Text = "Datos Empleados";
             this.datosEmpleadosToolStripMenuItem.Click += new System.EventHandler(this.datosEmpleadosToolStripMenuItem_Click);
             // 
             // datosProveedoresToolStripMenuItem
             // 
             this.datosProveedoresToolStripMenuItem.Name = "datosProveedoresToolStripMenuItem";
-            this.datosProveedoresToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.datosProveedoresToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.datosProveedoresToolStripMenuItem.Text = "Datos Proveedores";
             // 
             // datosTipoArticuloToolStripMenuItem
             // 
             this.datosTipoArticuloToolStripMenuItem.Name = "datosTipoArticuloToolStripMenuItem";
-            this.datosTipoArticuloToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.datosTipoArticuloToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.datosTipoArticuloToolStripMenuItem.Text = "Datos TipoArticulo";
+            // 
+            // datosColoresToolStripMenuItem
+            // 
+            this.datosColoresToolStripMenuItem.Name = "datosColoresToolStripMenuItem";
+            this.datosColoresToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
+            this.datosColoresToolStripMenuItem.Text = "Datos Colores";
+            this.datosColoresToolStripMenuItem.Click += new System.EventHandler(this.datosColoresToolStripMenuItem_Click);
+            // 
+            // datosMarcaToolStripMenuItem
+            // 
+            this.datosMarcaToolStripMenuItem.Name = "datosMarcaToolStripMenuItem";
+            this.datosMarcaToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
+            this.datosMarcaToolStripMenuItem.Text = "Datos Marcas";
             // 
             // facturarToolStripMenuItem
             // 
@@ -199,13 +213,13 @@
             // nuevaFacturaToolStripMenuItem
             // 
             this.nuevaFacturaToolStripMenuItem.Name = "nuevaFacturaToolStripMenuItem";
-            this.nuevaFacturaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.nuevaFacturaToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.nuevaFacturaToolStripMenuItem.Text = "Nueva Factura";
             // 
             // eliminarFacturaToolStripMenuItem
             // 
             this.eliminarFacturaToolStripMenuItem.Name = "eliminarFacturaToolStripMenuItem";
-            this.eliminarFacturaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.eliminarFacturaToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.eliminarFacturaToolStripMenuItem.Text = "Eliminar Factura";
             // 
             // reportesToolStripMenuItem
@@ -214,19 +228,6 @@
             this.reportesToolStripMenuItem.Size = new System.Drawing.Size(133, 19);
             this.reportesToolStripMenuItem.Text = "Reportes";
             this.reportesToolStripMenuItem.Click += new System.EventHandler(this.reportesToolStripMenuItem_Click);
-            // 
-            // datosColoresToolStripMenuItem
-            // 
-            this.datosColoresToolStripMenuItem.Name = "datosColoresToolStripMenuItem";
-            this.datosColoresToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.datosColoresToolStripMenuItem.Text = "Datos Colores";
-            this.datosColoresToolStripMenuItem.Click += new System.EventHandler(this.datosColoresToolStripMenuItem_Click);
-            // 
-            // datosMarcaToolStripMenuItem
-            // 
-            this.datosMarcaToolStripMenuItem.Name = "datosMarcaToolStripMenuItem";
-            this.datosMarcaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.datosMarcaToolStripMenuItem.Text = "Datos Marcas";
             // 
             // frmPrincipal
             // 

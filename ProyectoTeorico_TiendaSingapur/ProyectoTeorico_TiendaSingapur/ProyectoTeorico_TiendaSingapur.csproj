@@ -108,6 +108,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formularios De Negocios\Articulo\frmAltaArticulos.resx">
+      <DependentUpon>frmAltaArticulos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios De Negocios\Articulo\frmBYCArticulos.resx">
       <DependentUpon>frmBYCArticulos.cs</DependentUpon>
     </EmbeddedResource>
@@ -140,6 +143,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -156,6 +160,38 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Datos\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Formularios De Negocios\Imagenes Para menu\Aceptar.png" />
+    <Content Include="Formularios De Negocios\Imagenes Para menu\AgregarIcon.png" />
+    <Content Include="Formularios De Negocios\Imagenes Para menu\Buscar.png" />
+    <Content Include="Formularios De Negocios\Imagenes Para menu\Cancelar.png" />
+    <Content Include="Formularios De Negocios\Imagenes Para menu\CancelarIcon.png" />
+    <Content Include="Formularios De Negocios\Imagenes Para menu\Consultar.png" />
+    <Content Include="Formularios De Negocios\Imagenes Para menu\EliminarColor.png" />
+    <Content Include="Formularios De Negocios\Imagenes Para menu\EliminarMarca.png" />
+    <Content Include="Formularios De Negocios\Imagenes Para menu\EliminarPrenda.png" />
+    <Content Include="Formularios De Negocios\Imagenes Para menu\EliminarUsuario.png" />
+    <Content Include="Formularios De Negocios\Imagenes Para menu\GuardarIcon .png" />
+    <Content Include="Formularios De Negocios\Imagenes Para menu\Info.png" />
+    <Content Include="Formularios De Negocios\Imagenes Para menu\informacion.png" />
+    <Content Include="Formularios De Negocios\Imagenes Para menu\Ingresar.png" />
+    <Content Include="Formularios De Negocios\Imagenes Para menu\LogoSample_ByTailorBrands-removebg-preview %281%29.jpg" />
+    <Content Include="Formularios De Negocios\Imagenes Para menu\LogoSample_ByTailorBrands-removebg-preview %281%29.png" />
+    <Content Include="Formularios De Negocios\Imagenes Para menu\LogoSample_ByTailorBrands-removebg-preview-_1_.ico" />
+    <Content Include="Formularios De Negocios\Imagenes Para menu\ModificarPrenda.png" />
+    <Content Include="Formularios De Negocios\Imagenes Para menu\ModificarUsuario.png" />
+    <Content Include="Formularios De Negocios\Imagenes Para menu\NuevaFoto.png" />
+    <Content Include="Formularios De Negocios\Imagenes Para menu\NuevaMarca.png" />
+    <Content Include="Formularios De Negocios\Imagenes Para menu\NuevoColor.png" />
+    <Content Include="Formularios De Negocios\Imagenes Para menu\NuevoIcon.png" />
+    <Content Include="Formularios De Negocios\Imagenes Para menu\QuitarIcon.png" />
+    <Content Include="Formularios De Negocios\Imagenes Para menu\RegistrarPrenda.png" />
+    <Content Include="Formularios De Negocios\Imagenes Para menu\RegistrarUsuario.png" />
+    <Content Include="Formularios De Negocios\Imagenes Para menu\salir %282%29.png" />
+    <Content Include="Formularios De Negocios\Imagenes Para menu\salir.png" />
+    <Content Include="Formularios De Negocios\Imagenes Para menu\Seleccionar.png" />
+    <Content Include="Formularios De Negocios\Imagenes Para menu\SeleccionarPrenda.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
