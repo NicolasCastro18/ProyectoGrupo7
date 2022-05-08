@@ -64,6 +64,24 @@
     <Compile Include="Formularios De Negocios\Articulo\frmBYCArticulos.Designer.cs">
       <DependentUpon>frmBYCArticulos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios De Negocios\Cliente\frmAltaCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios De Negocios\Cliente\frmAltaCliente.Designer.cs">
+      <DependentUpon>frmAltaCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios De Negocios\Cliente\frmBajaYMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios De Negocios\Cliente\frmBajaYMod.Designer.cs">
+      <DependentUpon>frmBajaYMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios De Negocios\Cliente\ModificacionCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios De Negocios\Cliente\ModificacionCliente.Designer.cs">
+      <DependentUpon>ModificacionCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios De Negocios\Colores\frmAltasColores.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +124,18 @@
     <Compile Include="Formularios De Negocios\frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios De Negocios\Marca\frmAltaMarca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios De Negocios\Marca\frmAltaMarca.Designer.cs">
+      <DependentUpon>frmAltaMarca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios De Negocios\Marca\frmConsultaMarca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios De Negocios\Marca\frmConsultaMarca.Designer.cs">
+      <DependentUpon>frmConsultaMarca.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Formularios De Negocios\Articulo\frmAltaArticulos.resx">
@@ -113,6 +143,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios De Negocios\Articulo\frmBYCArticulos.resx">
       <DependentUpon>frmBYCArticulos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios De Negocios\Cliente\frmAltaCliente.resx">
+      <DependentUpon>frmAltaCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios De Negocios\Cliente\frmBajaYMod.resx">
+      <DependentUpon>frmBajaYMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios De Negocios\Cliente\ModificacionCliente.resx">
+      <DependentUpon>ModificacionCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios De Negocios\Colores\frmAltasColores.resx">
       <DependentUpon>frmAltasColores.cs</DependentUpon>
@@ -134,6 +173,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios De Negocios\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios De Negocios\Marca\frmAltaMarca.resx">
+      <DependentUpon>frmAltaMarca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios De Negocios\Marca\frmConsultaMarca.resx">
+      <DependentUpon>frmConsultaMarca.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

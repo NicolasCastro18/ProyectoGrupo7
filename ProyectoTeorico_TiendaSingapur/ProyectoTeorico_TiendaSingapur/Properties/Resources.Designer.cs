@@ -93,6 +93,16 @@ namespace ProyectoTeorico_TiendaSingapur.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap EliminarPrenda {
+            get {
+                object obj = ResourceManager.GetObject("EliminarPrenda", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap EliminarUsuario {
             get {
                 object obj = ResourceManager.GetObject("EliminarUsuario", resourceCulture);
@@ -106,6 +116,16 @@ namespace ProyectoTeorico_TiendaSingapur.Properties {
         internal static System.Drawing.Bitmap GuardarIcon_ {
             get {
                 object obj = ResourceManager.GetObject("GuardarIcon ", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ModificarPrenda {
+            get {
+                object obj = ResourceManager.GetObject("ModificarPrenda", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

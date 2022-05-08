@@ -9,18 +9,35 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ProyectoTeorico_TiendaSingapur.Formularios_De_Negocios.Articulo
+namespace ProyectoTeorico_TiendaSingapur.Formularios_De_Negocios.Marca
 {
-    public partial class frmBYCArticulos : Form
+    public partial class frmConsultaMarca : Form
     {
-        public frmBYCArticulos()
+        public frmConsultaMarca()
         {
             InitializeComponent();
         }
 
-        private void btnCancelar_Click(object sender, EventArgs e)
+        private void btnBuscar_Click(object sender, EventArgs e)
         {
-            this.Close(); 
+            string nombre = string.Empty;
+            nombre = textBox1.Text;
+            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
+
+            SqlConnection cn = new SqlConnection(cadenaConexion);
+
+            SqlCommand cmd = new SqlCommand();
+            string consulta = "Select id_marca, nombre From Marca  where nombre = '" + nombre + "'  and borrado = 0";
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = consulta;
+            cn.Open();
+            cmd.Connection = cn;
+            DataTable tabla = new DataTable();
+
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(tabla);
+
+            dataGridView1.DataSource = tabla;
         }
 
         private void btnBorrar_Click(object sender, EventArgs e)
@@ -29,18 +46,19 @@ namespace ProyectoTeorico_TiendaSingapur.Formularios_De_Negocios.Articulo
 
             SqlConnection cn = new SqlConnection(cadenaConexion);
             SqlCommand cmd = new SqlCommand();
-            string consulta = "Update Articulos set borrado = " + 1;
+            string consulta = "Update Marca set borrado = " + 1 + "where nombre = '" + textBox1.Text + "'";
             cmd.CommandType = CommandType.Text;
             cmd.CommandText = consulta;
             cn.Open();
             cmd.Connection = cn;
             cmd.ExecuteNonQuery();
             cn.Close();
-            MessageBox.Show("Articulo borrado");
+            MessageBox.Show("Se ha eliminado la marca con exito");
         }
 
-        private void frmBYCArticulos_Load(object sender, EventArgs e)
+        private void btnRefrescar_Click(object sender, EventArgs e)
         {
+            this.textBox1.Text = "";
             cargarGrilla();
         }
         private void cargarGrilla()
@@ -52,7 +70,7 @@ namespace ProyectoTeorico_TiendaSingapur.Formularios_De_Negocios.Articulo
             try
             {
                 SqlCommand cmd = new SqlCommand();
-                string consulta = "Select  T.nombre, Te.nombre, A.precio, A.stock, M.nombre, C.nombre, P.nombre, A.nombreImagen From Articulos A, Temporada Te, TipoPrenda T, Marca M, Color C, Proveedor P Where A.id_temporada = Te.id_temporada  and A.id_color = C.id_color and A.id_marca = M.id_marca and A.id_tipoPrenda = T.id_TipoPrendaand A.id_proveedor = p.id_proveedor";
+                string consulta = "Select id_marca, nombre From Marca where borrado = 0";
                 cmd.CommandType = CommandType.Text;
                 cmd.CommandText = consulta;
                 cn.Open();
@@ -62,7 +80,7 @@ namespace ProyectoTeorico_TiendaSingapur.Formularios_De_Negocios.Articulo
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 da.Fill(tabla);
 
-                dgvArticulo.DataSource = tabla;
+                dataGridView1.DataSource = tabla;
 
 
 
@@ -79,31 +97,10 @@ namespace ProyectoTeorico_TiendaSingapur.Formularios_De_Negocios.Articulo
             }
         }
 
-        private void btnBuscar_Click(object sender, EventArgs e)
+        private void frmConsultaMarca_Load(object sender, EventArgs e)
         {
-            btnBorrar.Enabled = true;
-            btnModificar.Enabled = true;
-            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
-
-            SqlConnection cn = new SqlConnection(cadenaConexion);
-
-            SqlCommand cmd = new SqlCommand();
-            string consulta = "Select ";
-            cmd.CommandType = CommandType.Text;
-            cmd.CommandText = consulta;
-            cn.Open();
-            cmd.Connection = cn;
-            DataTable tabla = new DataTable();
-
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
-            da.Fill(tabla);
-
-            dgvArticulo.DataSource = tabla;
-        }
-
-        private void btnConsultar_Click(object sender, EventArgs e)
-        {
-
+            cargarGrilla();
         }
     }
 }
+    

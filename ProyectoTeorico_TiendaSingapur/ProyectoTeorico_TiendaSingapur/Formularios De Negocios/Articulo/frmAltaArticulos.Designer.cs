@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.nupPrecio = new System.Windows.Forms.NumericUpDown();
+            this.nupStock = new System.Windows.Forms.NumericUpDown();
+            this.cboColor = new System.Windows.Forms.ComboBox();
+            this.cboTemporada = new System.Windows.Forms.ComboBox();
+            this.cboMarca = new System.Windows.Forms.ComboBox();
+            this.cboTipoPrenda = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -42,64 +42,67 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pbArticulo = new System.Windows.Forms.PictureBox();
             this.btnFoto = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.lblProveedor = new System.Windows.Forms.Label();
+            this.cboProveedor = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.nupPrecio)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nupStock)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbArticulo)).BeginInit();
             this.SuspendLayout();
             // 
-            // numericUpDown2
+            // nupPrecio
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(101, 290);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(198, 20);
-            this.numericUpDown2.TabIndex = 28;
+            this.nupPrecio.Location = new System.Drawing.Point(101, 286);
+            this.nupPrecio.Name = "nupPrecio";
+            this.nupPrecio.Size = new System.Drawing.Size(198, 20);
+            this.nupPrecio.TabIndex = 28;
             // 
-            // numericUpDown1
+            // nupStock
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(101, 244);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(198, 20);
-            this.numericUpDown1.TabIndex = 27;
+            this.nupStock.Location = new System.Drawing.Point(101, 244);
+            this.nupStock.Name = "nupStock";
+            this.nupStock.Size = new System.Drawing.Size(198, 20);
+            this.nupStock.TabIndex = 27;
             // 
-            // comboBox4
+            // cboColor
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(101, 203);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(198, 21);
-            this.comboBox4.TabIndex = 26;
+            this.cboColor.FormattingEnabled = true;
+            this.cboColor.Location = new System.Drawing.Point(101, 203);
+            this.cboColor.Name = "cboColor";
+            this.cboColor.Size = new System.Drawing.Size(198, 21);
+            this.cboColor.TabIndex = 26;
             // 
-            // comboBox3
+            // cboTemporada
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(101, 158);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(198, 21);
-            this.comboBox3.TabIndex = 25;
+            this.cboTemporada.FormattingEnabled = true;
+            this.cboTemporada.Location = new System.Drawing.Point(101, 158);
+            this.cboTemporada.Name = "cboTemporada";
+            this.cboTemporada.Size = new System.Drawing.Size(198, 21);
+            this.cboTemporada.TabIndex = 25;
             // 
-            // comboBox2
+            // cboMarca
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(101, 111);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(198, 21);
-            this.comboBox2.TabIndex = 24;
+            this.cboMarca.FormattingEnabled = true;
+            this.cboMarca.Location = new System.Drawing.Point(101, 111);
+            this.cboMarca.Name = "cboMarca";
+            this.cboMarca.Size = new System.Drawing.Size(198, 21);
+            this.cboMarca.TabIndex = 24;
             // 
-            // comboBox1
+            // cboTipoPrenda
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(101, 67);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(198, 21);
-            this.comboBox1.TabIndex = 23;
+            this.cboTipoPrenda.FormattingEnabled = true;
+            this.cboTipoPrenda.Location = new System.Drawing.Point(101, 67);
+            this.cboTipoPrenda.Name = "cboTipoPrenda";
+            this.cboTipoPrenda.Size = new System.Drawing.Size(198, 21);
+            this.cboTipoPrenda.TabIndex = 23;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(18, 297);
+            this.label6.Location = new System.Drawing.Point(18, 293);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(37, 13);
             this.label6.TabIndex = 22;
@@ -158,6 +161,7 @@
             this.btnAgregar.Size = new System.Drawing.Size(50, 41);
             this.btnAgregar.TabIndex = 31;
             this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // btnCancelar
             // 
@@ -167,25 +171,27 @@
             this.btnCancelar.Size = new System.Drawing.Size(94, 41);
             this.btnCancelar.TabIndex = 30;
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
-            // pictureBox1
+            // pbArticulo
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(367, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(416, 426);
-            this.pictureBox1.TabIndex = 16;
-            this.pictureBox1.TabStop = false;
+            this.pbArticulo.Location = new System.Drawing.Point(367, 12);
+            this.pbArticulo.Name = "pbArticulo";
+            this.pbArticulo.Size = new System.Drawing.Size(416, 426);
+            this.pbArticulo.TabIndex = 16;
+            this.pbArticulo.TabStop = false;
             // 
             // btnFoto
             // 
             this.btnFoto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnFoto.ForeColor = System.Drawing.SystemColors.Control;
             this.btnFoto.Image = global::ProyectoTeorico_TiendaSingapur.Properties.Resources.NuevaFoto;
-            this.btnFoto.Location = new System.Drawing.Point(224, 346);
+            this.btnFoto.Location = new System.Drawing.Point(224, 365);
             this.btnFoto.Name = "btnFoto";
             this.btnFoto.Size = new System.Drawing.Size(123, 26);
             this.btnFoto.TabIndex = 29;
             this.btnFoto.UseVisualStyleBackColor = false;
+            this.btnFoto.Click += new System.EventHandler(this.btnFoto_Click);
             // 
             // label7
             // 
@@ -198,34 +204,64 @@
             this.label7.TabIndex = 32;
             this.label7.Text = "Nuevo Articulo";
             // 
+            // lblProveedor
+            // 
+            this.lblProveedor.AutoSize = true;
+            this.lblProveedor.Location = new System.Drawing.Point(20, 329);
+            this.lblProveedor.Name = "lblProveedor";
+            this.lblProveedor.Size = new System.Drawing.Size(56, 13);
+            this.lblProveedor.TabIndex = 33;
+            this.lblProveedor.Text = "Proveedor";
+            // 
+            // cboProveedor
+            // 
+            this.cboProveedor.FormattingEnabled = true;
+            this.cboProveedor.Location = new System.Drawing.Point(101, 322);
+            this.cboProveedor.Name = "cboProveedor";
+            this.cboProveedor.Size = new System.Drawing.Size(198, 21);
+            this.cboProveedor.TabIndex = 34;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(20, 372);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(169, 13);
+            this.label8.TabIndex = 35;
+            this.label8.Text = "Todos los campos son obligatorios";
+            // 
             // frmAltaArticulos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.cboProveedor);
+            this.Controls.Add(this.lblProveedor);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.btnCancelar);
-            this.Controls.Add(this.numericUpDown2);
-            this.Controls.Add(this.numericUpDown1);
-            this.Controls.Add(this.comboBox4);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.nupPrecio);
+            this.Controls.Add(this.nupStock);
+            this.Controls.Add(this.cboColor);
+            this.Controls.Add(this.cboTemporada);
+            this.Controls.Add(this.cboMarca);
+            this.Controls.Add(this.cboTipoPrenda);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pbArticulo);
             this.Controls.Add(this.btnFoto);
             this.Name = "frmAltaArticulos";
             this.Text = "frmAltaArticulos";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Load += new System.EventHandler(this.frmAltaArticulos_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.nupPrecio)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nupStock)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbArticulo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -235,20 +271,23 @@
 
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.NumericUpDown nupPrecio;
+        private System.Windows.Forms.NumericUpDown nupStock;
+        private System.Windows.Forms.ComboBox cboColor;
+        private System.Windows.Forms.ComboBox cboTemporada;
+        private System.Windows.Forms.ComboBox cboMarca;
+        private System.Windows.Forms.ComboBox cboTipoPrenda;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pbArticulo;
         private System.Windows.Forms.Button btnFoto;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblProveedor;
+        private System.Windows.Forms.ComboBox cboProveedor;
+        private System.Windows.Forms.Label label8;
     }
 }

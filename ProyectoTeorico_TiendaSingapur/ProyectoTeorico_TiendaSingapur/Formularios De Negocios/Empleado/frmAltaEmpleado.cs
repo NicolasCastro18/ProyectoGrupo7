@@ -26,7 +26,7 @@ namespace ProyectoTeorico_TiendaSingapur.Formularios_De_Negocios
         {
             
             //bool resultado = false;
-            if (this.txtNombre.Text == "" || this.txtApellido.Text == "" || this.txtNombreUsuario.Text == "" || this.txtContraseña.Text == "")
+            if (this.txtLegajo.Text == "" || this.txtNombre.Text == "" || this.txtApellido.Text == "" || this.txtNombreUsuario.Text == "" || this.txtContraseña.Text == "")
             {
                 MessageBox.Show("Debe ingresar todos los campos obligatorios para dar de alta al empleado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtAltura.Focus();
@@ -63,8 +63,8 @@ namespace ProyectoTeorico_TiendaSingapur.Formularios_De_Negocios
             try
             {
                 SqlCommand cmd = new SqlCommand();
-                string consulta = "Insert into Empleado (nombre, apellido, nombreUsuario, contraseña, mail, telefono, calle, nroCalle, id_barrio) values ('" + txtNombre.Text + "','" + txtApellido.Text + "','" + txtNombreUsuario.Text + "', " +
-                    "'" + txtContraseña.Text + "','" + txtMail.Text + "','" + txtTelefono.Text + "', '" + txtCalle.Text + "','" + txtAltura.Text + "', '" + cboBarrio.SelectedValue+ "')";
+                string consulta = "Insert into Empleado (nombre, apellido, nombreUsuario, contraseña, mail, telefono, calle, nroCalle, id_barrio, legajo) values ('" + txtNombre.Text + "','" + txtApellido.Text + "','" + txtNombreUsuario.Text + "', " +
+                    "'" + txtContraseña.Text + "','" + txtMail.Text + "','" + txtTelefono.Text + "', '" + txtCalle.Text + "','" + txtAltura.Text + "', '" + cboBarrio.SelectedValue+ "', '" + txtLegajo.Text + "')";
                 cmd.CommandType = CommandType.Text;
                 cmd.CommandText = consulta;
                 cn.Open();
@@ -156,6 +156,11 @@ namespace ProyectoTeorico_TiendaSingapur.Formularios_De_Negocios
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblBarrio_Click(object sender, EventArgs e)
         {
 
         }

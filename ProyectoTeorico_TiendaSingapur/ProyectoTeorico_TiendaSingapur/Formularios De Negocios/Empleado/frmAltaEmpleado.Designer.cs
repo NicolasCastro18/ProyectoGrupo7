@@ -29,10 +29,12 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtTelefono = new System.Windows.Forms.TextBox();
+            this.txtLegajo = new System.Windows.Forms.MaskedTextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.cboBarrio = new System.Windows.Forms.ComboBox();
             this.txtAltura = new System.Windows.Forms.TextBox();
             this.txtCalle = new System.Windows.Forms.TextBox();
-            this.txtTelefono = new System.Windows.Forms.TextBox();
             this.txtMail = new System.Windows.Forms.TextBox();
             this.txtContraseña = new System.Windows.Forms.TextBox();
             this.txtNombreUsuario = new System.Windows.Forms.TextBox();
@@ -56,10 +58,12 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txtTelefono);
+            this.groupBox1.Controls.Add(this.txtLegajo);
+            this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.cboBarrio);
             this.groupBox1.Controls.Add(this.txtAltura);
             this.groupBox1.Controls.Add(this.txtCalle);
-            this.groupBox1.Controls.Add(this.txtTelefono);
             this.groupBox1.Controls.Add(this.txtMail);
             this.groupBox1.Controls.Add(this.txtContraseña);
             this.groupBox1.Controls.Add(this.txtNombreUsuario);
@@ -81,6 +85,29 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos Nuevo Empleado";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // txtTelefono
+            // 
+            this.txtTelefono.Location = new System.Drawing.Point(109, 238);
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Size = new System.Drawing.Size(223, 20);
+            this.txtTelefono.TabIndex = 22;
+            // 
+            // txtLegajo
+            // 
+            this.txtLegajo.Location = new System.Drawing.Point(109, 24);
+            this.txtLegajo.Name = "txtLegajo";
+            this.txtLegajo.Size = new System.Drawing.Size(223, 20);
+            this.txtLegajo.TabIndex = 21;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(21, 31);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(49, 13);
+            this.label2.TabIndex = 20;
+            this.label2.Text = "Legajo(*)";
             // 
             // cboBarrio
             // 
@@ -105,15 +132,6 @@
             this.txtCalle.Size = new System.Drawing.Size(223, 20);
             this.txtCalle.TabIndex = 15;
             // 
-            // txtTelefono
-            // 
-            this.txtTelefono.Location = new System.Drawing.Point(109, 238);
-            this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txtTelefono.Size = new System.Drawing.Size(223, 20);
-            this.txtTelefono.TabIndex = 14;
-            this.txtTelefono.TabStop = false;
-            // 
             // txtMail
             // 
             this.txtMail.Location = new System.Drawing.Point(109, 202);
@@ -137,14 +155,14 @@
             // 
             // txtApellido
             // 
-            this.txtApellido.Location = new System.Drawing.Point(109, 84);
+            this.txtApellido.Location = new System.Drawing.Point(109, 91);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(223, 20);
             this.txtApellido.TabIndex = 10;
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(109, 39);
+            this.txtNombre.Location = new System.Drawing.Point(109, 55);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(223, 20);
             this.txtNombre.TabIndex = 9;
@@ -157,6 +175,7 @@
             this.lblBarrio.Size = new System.Drawing.Size(44, 13);
             this.lblBarrio.TabIndex = 8;
             this.lblBarrio.Text = "Barrio(*)";
+            this.lblBarrio.Click += new System.EventHandler(this.lblBarrio_Click);
             // 
             // lblNumeroCalle
             // 
@@ -215,7 +234,7 @@
             // lblApellido
             // 
             this.lblApellido.AutoSize = true;
-            this.lblApellido.Location = new System.Drawing.Point(21, 91);
+            this.lblApellido.Location = new System.Drawing.Point(21, 98);
             this.lblApellido.Name = "lblApellido";
             this.lblApellido.Size = new System.Drawing.Size(54, 13);
             this.lblApellido.TabIndex = 1;
@@ -224,7 +243,7 @@
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(21, 46);
+            this.lblNombre.Location = new System.Drawing.Point(21, 62);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(54, 13);
             this.lblNombre.TabIndex = 0;
@@ -296,7 +315,6 @@
         private System.Windows.Forms.ComboBox cboBarrio;
         private System.Windows.Forms.TextBox txtAltura;
         private System.Windows.Forms.TextBox txtCalle;
-        private System.Windows.Forms.TextBox txtTelefono;
         private System.Windows.Forms.TextBox txtMail;
         private System.Windows.Forms.TextBox txtContraseña;
         private System.Windows.Forms.TextBox txtNombreUsuario;
@@ -315,5 +333,8 @@
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.MaskedTextBox txtLegajo;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtTelefono;
     }
 }

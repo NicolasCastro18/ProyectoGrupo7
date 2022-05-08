@@ -69,5 +69,17 @@ namespace ProyectoTeorico_TiendaSingapur
             ventana.ShowDialog();
             ventana.Dispose();
         }
+
+        private void datosTipoArticuloToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void datosArticulosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmBYCArticulos ventana = new frmBYCArticulos();
+            ventana.ShowDialog();
+            ventana.Dispose(); 
+        }
     }
 }

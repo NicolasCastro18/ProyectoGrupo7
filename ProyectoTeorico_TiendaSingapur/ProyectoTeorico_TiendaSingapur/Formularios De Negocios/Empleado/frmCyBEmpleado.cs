@@ -34,7 +34,7 @@ namespace ProyectoTeorico_TiendaSingapur.Formularios_De_Negocios
             try
             {
                 SqlCommand cmd = new SqlCommand();
-                string consulta = "Select id_empleado, apellido, nombre, nombreUsuario, contraseña, mail, telefono, id_barrio, calle, nroCalle From Empleado where borrado = 0";
+                string consulta = "Select legajo, apellido, nombre, nombreUsuario, contraseña, mail, telefono, id_barrio, calle, nroCalle From Empleado where borrado = 0";
                 cmd.CommandType = CommandType.Text;
                 cmd.CommandText = consulta;
                 cn.Open();
@@ -66,14 +66,14 @@ namespace ProyectoTeorico_TiendaSingapur.Formularios_De_Negocios
             btnModificar.Enabled = true;
             btnBorrar.Enabled = true;
             string id = string.Empty;
-            id = txtId.Text;
+            id = txtLegajo.Text;
 
             string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
 
             SqlConnection cn = new SqlConnection(cadenaConexion);
 
             SqlCommand cmd = new SqlCommand();
-            string consulta = "Select id_empleado, apellido, nombre, nombreUsuario, contraseña, mail, telefono, id_barrio, calle, nroCalle From Empleado  where id_empleado = '" + id + "'  and borrado = 0";
+            string consulta = "Select legajo, apellido, nombre, nombreUsuario, contraseña, mail, telefono, id_barrio, calle, nroCalle From Empleado  where id_empleado = '" + id + "'  and borrado = 0";
             cmd.CommandType = CommandType.Text;
             cmd.CommandText = consulta;
             cn.Open();
@@ -93,8 +93,8 @@ namespace ProyectoTeorico_TiendaSingapur.Formularios_De_Negocios
 
         private void dgvEmpleado_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            btnModificar.Enabled = true;
-            btnBorrar.Enabled = true;
+           // btnModificar.Enabled = true;
+            //btnBorrar.Enabled = true;
         }
 
         private void btnBorrar_Click(object sender, EventArgs e)
@@ -103,7 +103,7 @@ namespace ProyectoTeorico_TiendaSingapur.Formularios_De_Negocios
 
             SqlConnection cn = new SqlConnection(cadenaConexion);
             SqlCommand cmd = new SqlCommand();
-            string consulta = "Update Empleado set borrado = " + 1 + "where id_empleado = '" + id + "'";
+            string consulta = "Update Empleado set borrado = " + 1 + "where legajo = '" + txtLegajo.Text + "'";
             cmd.CommandType = CommandType.Text;
             cmd.CommandText = consulta;
             cn.Open();
@@ -131,7 +131,7 @@ namespace ProyectoTeorico_TiendaSingapur.Formularios_De_Negocios
             cb.Calle = (string)dgvEmpleado.CurrentRow.Cells[8].Value;
             cb.NroCalle = (int)dgvEmpleado.CurrentRow.Cells[9].Value;
             cb.id_Barrio = (int)dgvEmpleado.CurrentRow.Cells[7].Value;
-            cb.Id_empleado = (int)dgvEmpleado.CurrentRow.Cells[0].Value;
+            cb.Legajo = (int)dgvEmpleado.CurrentRow.Cells[0].Value;
             cb.ShowDialog();
 
             cb.Dispose();
@@ -139,7 +139,8 @@ namespace ProyectoTeorico_TiendaSingapur.Formularios_De_Negocios
         }
         private void dgvEmpleado_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            btnBorrar.Enabled = true;
+            btnModificar.Enabled = true;
         }
     }
 }
